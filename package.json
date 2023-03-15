@@ -21,7 +21,7 @@
 	},
 	"lint-staged": {
 		"*.js": ["wp-scripts lint-js" , "wp-scripts format" ],
-		"*.scss": "wp-scripts lint-style"
+		"*.scss": "npx stylelint --fix"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^11.5.0",

@@ -20,8 +20,8 @@
 		"extends": "@wordpress/stylelint-config/scss"
 	},
 	"lint-staged": {
-		"*.js": "wp-scripts lint-js",
-		"&.scss": "wp-scripts lint-style"
+		"*.js": ["wp-scripts lint-js" , "wp-scripts format" ],
+		"*.scss": "wp-scripts lint-style"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^11.5.0",
